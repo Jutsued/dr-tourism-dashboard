@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
 <title>DR Tourism Intelligence</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
@@ -106,11 +107,684 @@
     nav, header.hero, section, footer { padding-left:1.1rem; padding-right:1.1rem; }
     .links { display:none; } .grid2 { grid-template-columns:1fr; }
     .item { grid-template-columns:1fr; gap:.3rem; }
+=======
+<title>Dominican Republic Tourism Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --gold: #c9a84c;
+    --gold-light: #e8c96e;
+    --gold-dim: rgba(201,168,76,0.15);
+    --teal: #1a7a6e;
+    --teal-light: #22a99a;
+    --bg: #0b0f0e;
+    --bg2: #111815;
+    --bg3: #161e1c;
+    --bg4: #1c2523;
+    --text: #f0ede4;
+    --text-muted: #8a9490;
+    --text-dim: #4a5652;
+    --border: rgba(201,168,76,0.12);
+    --border-subtle: rgba(255,255,255,0.06);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ── NOISE TEXTURE OVERLAY ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0.4;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    background: rgba(11,15,14,0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--gold);
+    letter-spacing: 0.02em;
+  }
+
+  .nav-brand .flag { font-size: 1.3rem; }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--gold); }
+
+  .nav-badge {
+    background: var(--gold-dim);
+    border: 1px solid var(--border);
+    color: var(--gold);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 2px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 4rem 2.5rem 3rem;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 40%, rgba(26,122,110,0.18) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 20% 80%, rgba(201,168,76,0.1) 0%, transparent 50%),
+      var(--bg2);
+  }
+
+  .hero-geo {
+    position: absolute;
+    top: 0; right: 0;
+    width: 55%;
+    height: 100%;
+    opacity: 0.04;
+    background-image:
+      repeating-linear-gradient(0deg, var(--gold) 0px, transparent 1px, transparent 40px),
+      repeating-linear-gradient(90deg, var(--gold) 0px, transparent 1px, transparent 40px);
+  }
+
+  .hero-content { position: relative; max-width: 720px; }
+
+  .hero-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+    color: var(--text-muted);
+    max-width: 480px;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-stat-item { }
+
+  .hero-stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold);
+    display: block;
+    line-height: 1;
+  }
+
+  .hero-stat-label {
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 4px;
+  }
+
+  /* ── SECTION LAYOUT ── */
+  .section {
+    padding: 3rem 2.5rem;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .section-note {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+  }
+
+  /* ── KPI CARDS ── */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1px;
+    background: var(--border-subtle);
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+
+  .kpi {
+    background: var(--bg2);
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.2s;
+  }
+
+  .kpi:hover { background: var(--bg3); }
+
+  .kpi::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    height: 2px;
+    width: 0%;
+    background: var(--gold);
+    transition: width 0.4s ease;
+  }
+
+  .kpi:hover::after { width: 100%; }
+
+  .kpi-label {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 0.75rem;
+  }
+
+  .kpi-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+
+  .kpi-value.gold { color: var(--gold); }
+  .kpi-value.teal { color: var(--teal-light); }
+
+  .kpi-change {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--teal-light);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .kpi-change.down { color: #e07b35; }
+
+  /* ── CHART CONTAINERS ── */
+  .charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .charts-grid.thirds {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .chart-card {
+    background: var(--bg2);
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+    padding: 1.5rem;
+  }
+
+  .chart-card.full { grid-column: 1 / -1; }
+
+  .chart-title {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .chart-title .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+  }
+
+  .chart-wrap { position: relative; width: 100%; }
+
+  /* ── PUERTO PLATA SECTION ── */
+  .pp-hero {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .pp-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(26,122,110,0.2);
+    border: 1px solid rgba(34,169,154,0.3);
+    color: var(--teal-light);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+  }
+
+  .pp-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.75rem;
+  }
+
+  .pp-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .pp-stats { display: flex; flex-direction: column; gap: 1rem; }
+
+  .pp-stat {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--bg4);
+    border-radius: 3px;
+    border-left: 3px solid var(--teal);
+  }
+
+  .pp-stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--teal-light);
+    white-space: nowrap;
+  }
+
+  .pp-stat-label {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+
+  /* ── ROUTES TABLE ── */
+  .routes-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+  }
+
+  .routes-table th {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+    text-align: left;
+  }
+
+  .routes-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+    color: var(--text-muted);
+  }
+
+  .routes-table tr:last-child td { border-bottom: none; }
+  .routes-table tr:hover td { background: var(--bg3); color: var(--text); }
+
+  .rank-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px; height: 22px;
+    background: var(--gold-dim);
+    border: 1px solid var(--border);
+    color: var(--gold);
+    font-size: 0.65rem;
+    font-weight: 500;
+    border-radius: 2px;
+  }
+
+  .bar-inline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .bar-track {
+    flex: 1;
+    height: 3px;
+    background: var(--bg4);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .bar-fill {
+    height: 100%;
+    background: var(--teal);
+    border-radius: 2px;
+    transition: width 1s ease;
+  }
+
+  /* ── MARKET SHARE ── */
+  .markets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .market-card {
+    background: var(--bg2);
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+    padding: 1.25rem;
+    text-align: center;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .market-card:hover {
+    border-color: var(--border);
+    transform: translateY(-2px);
+  }
+
+  .market-flag { font-size: 2rem; margin-bottom: 0.5rem; display: block; }
+
+  .market-pct {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--gold);
+  }
+
+  .market-country {
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  /* ── TICKER ── */
+  .ticker-bar {
+    background: var(--gold-dim);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+    padding: 0.7rem 0;
+    margin-bottom: 1px;
+  }
+
+  .ticker-inner {
+    display: flex;
+    gap: 3rem;
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
+  }
+
+  .ticker-item {
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .ticker-item span { color: var(--text-muted); }
+
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ── YEAR FILTER ── */
+  .year-filter {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  .year-btn {
+    background: none;
+    border: 1px solid var(--border-subtle);
+    color: var(--text-muted);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    padding: 5px 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .year-btn:hover, .year-btn.active {
+    background: var(--gold-dim);
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  /* ── LEGEND ── */
+  .legend {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+  }
+
+  .legend-dot {
+    width: 8px; height: 8px;
+    border-radius: 2px;
+  }
+
+  /* ── INSIGHTS ── */
+  .insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+
+  .insight-card {
+    background: var(--bg2);
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+    padding: 1.25rem;
+    border-left: 3px solid var(--gold);
+  }
+
+  .insight-icon {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .insight-title {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--text);
+    margin-bottom: 0.4rem;
+  }
+
+  .insight-body {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: 2rem 2.5rem;
+    border-top: 1px solid var(--border-subtle);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+  }
+
+  .footer-sources {
+    font-size: 0.68rem;
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .fade-up { animation: fadeUp 0.6s ease forwards; }
+  .delay-1 { animation-delay: 0.1s; opacity: 0; }
+  .delay-2 { animation-delay: 0.2s; opacity: 0; }
+  .delay-3 { animation-delay: 0.3s; opacity: 0; }
+  .delay-4 { animation-delay: 0.4s; opacity: 0; }
+  .delay-5 { animation-delay: 0.5s; opacity: 0; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.25rem; }
+    .nav-links { display: none; }
+    .hero { padding: 3rem 1.25rem 2.5rem; }
+    .section { padding: 2rem 1.25rem; }
+    .charts-grid, .charts-grid.thirds { grid-template-columns: 1fr; }
+    .pp-hero { grid-template-columns: 1fr; }
+    footer { padding: 1.5rem 1.25rem; }
+>>>>>>> 81d3aac48815c4639c54236de2ca5e6191d12b47
   }
 </style>
 </head>
 <body>
 
+<<<<<<< HEAD
 <nav>
   <div class="brand">🇩🇴 DR Tourism Intelligence</div>
   <ul class="links">
@@ -209,11 +883,333 @@
       <h3>Latest available year per country</h3>
       <table id="wbTable"><thead><tr><th>Country</th><th class="num">Arrivals</th><th class="num">vs 2019</th><th class="num">Receipts</th><th class="num">% of exports</th></tr></thead><tbody></tbody></table>
       <p class="caveat">World Bank / UN Tourism series lag one to two years, and countries count arrivals differently (overnight tourists vs. all visitors incl. cruise). Treat cross-country gaps as rough. The DR's own 2025–26 numbers above are more current than anything in this table.</p>
+=======
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <span class="flag">🇩🇴</span>
+    DR Tourism Intelligence
+  </div>
+  <ul class="nav-links">
+    <li><a href="#national">National</a></li>
+    <li><a href="#airports">Airports</a></li>
+    <li><a href="#puerto-plata">Puerto Plata</a></li>
+    <li><a href="#markets">Markets</a></li>
+  </ul>
+  <div class="nav-badge">Data through 2025</div>
+</nav>
+
+<!-- TICKER -->
+<div class="ticker-bar">
+  <div class="ticker-inner" id="ticker">
+    <div class="ticker-item">Total visitors 2024 <span>11.2M ↑</span></div>
+    <div class="ticker-item">Tourism revenue <span>$10.9B USD</span></div>
+    <div class="ticker-item">GDP contribution <span>8.8%</span></div>
+    <div class="ticker-item">Fastest growing airport <span>Puerto Plata +20%</span></div>
+    <div class="ticker-item">Hotel rooms <span>87,322</span></div>
+    <div class="ticker-item">Cruise passengers 2024 <span>2.65M</span></div>
+    <div class="ticker-item">2025 surge Jan–Aug <span>+49% vs 2019</span></div>
+    <div class="ticker-item">#1 Caribbean destination <span>Most visited</span></div>
+    <div class="ticker-item">Total visitors 2024 <span>11.2M ↑</span></div>
+    <div class="ticker-item">Tourism revenue <span>$10.9B USD</span></div>
+    <div class="ticker-item">GDP contribution <span>8.8%</span></div>
+    <div class="ticker-item">Fastest growing airport <span>Puerto Plata +20%</span></div>
+    <div class="ticker-item">Hotel rooms <span>87,322</span></div>
+    <div class="ticker-item">Cruise passengers 2024 <span>2.65M</span></div>
+    <div class="ticker-item">2025 surge Jan–Aug <span>+49% vs 2019</span></div>
+    <div class="ticker-item">#1 Caribbean destination <span>Most visited</span></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-geo"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow fade-up delay-1">Tourism Intelligence Report · 2019–2025</p>
+    <h1 class="fade-up delay-2">The Caribbean's<br><em>undisputed</em> leader.</h1>
+    <p class="hero-sub fade-up delay-3">From post-pandemic recovery to record-breaking arrivals — tracking the Dominican Republic's meteoric rise as Latin America's top travel destination.</p>
+    <div class="hero-stats fade-up delay-4">
+      <div class="hero-stat-item">
+        <span class="hero-stat-num" data-target="11.2" data-suffix="M">11.2M</span>
+        <span class="hero-stat-label">Visitors 2024</span>
+      </div>
+      <div class="hero-stat-item">
+        <span class="hero-stat-num">$10.9B</span>
+        <span class="hero-stat-label">Revenue USD</span>
+      </div>
+      <div class="hero-stat-item">
+        <span class="hero-stat-num">+75%</span>
+        <span class="hero-stat-label">Growth vs 2019</span>
+      </div>
+      <div class="hero-stat-item">
+        <span class="hero-stat-num">#1</span>
+        <span class="hero-stat-label">Caribbean rank</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- NATIONAL SECTION -->
+<section class="section" id="national">
+  <div class="section-header">
+    <h2 class="section-title">National Overview</h2>
+    <span class="section-note">Source: MITUR, JAC, Central Bank DR</span>
+  </div>
+
+  <div class="kpi-grid fade-up delay-1">
+    <div class="kpi">
+      <div class="kpi-label">Total visitors 2024</div>
+      <div class="kpi-value gold">11.2M</div>
+      <div class="kpi-change">↑ 17% vs 2023</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Air arrivals 2024</div>
+      <div class="kpi-value">8.54M</div>
+      <div class="kpi-change">↑ 32% vs 2019</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Cruise passengers 2024</div>
+      <div class="kpi-value">2.65M</div>
+      <div class="kpi-change">↑ 141% vs 2019</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Revenue (USD)</div>
+      <div class="kpi-value teal">$10.9B</div>
+      <div class="kpi-change">↑ 11% vs 2023</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">% of GDP</div>
+      <div class="kpi-value">8.8%</div>
+      <div class="kpi-change">↑ from 8.1% in 2023</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Hotel rooms</div>
+      <div class="kpi-value">87,322</div>
+      <div class="kpi-change">+10K in pipeline</div>
+    </div>
+  </div>
+
+  <div class="charts-grid">
+    <div class="chart-card">
+      <div class="chart-title"><span class="dot"></span>Total visitor arrivals (millions)</div>
+      <div class="legend">
+        <div class="legend-item"><span class="legend-dot" style="background:#c9a84c"></span>Pre-pandemic</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#e07b35"></span>COVID disruption</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#22a99a"></span>Recovery & growth</div>
+      </div>
+      <div class="chart-wrap" style="height:240px">
+        <canvas id="visitorsChart" role="img" aria-label="Bar chart of total DR visitor arrivals 2019 to 2025"></canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title"><span class="dot"></span>Revenue in USD billions</div>
+      <div class="chart-wrap" style="height:260px">
+        <canvas id="revenueChart" role="img" aria-label="Line chart of tourism revenue 2019 to 2024"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="charts-grid thirds">
+    <div class="chart-card">
+      <div class="chart-title"><span class="dot"></span>Air vs cruise arrivals — 2024</div>
+      <div class="legend">
+        <div class="legend-item"><span class="legend-dot" style="background:#c9a84c"></span>Air (8.54M)</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#22a99a"></span>Cruise (2.65M)</div>
+      </div>
+      <div class="chart-wrap" style="height:220px">
+        <canvas id="airCruiseChart" role="img" aria-label="Grouped bar chart comparing air vs cruise arrivals 2019 to 2024"></canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title"><span class="dot"></span>GDP share over time</div>
+      <div class="chart-wrap" style="height:240px">
+        <canvas id="gdpChart" role="img" aria-label="Area chart of tourism as percentage of GDP"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AIRPORTS SECTION -->
+<section class="section" id="airports">
+  <div class="section-header">
+    <h2 class="section-title">Airport Traffic 2024</h2>
+    <span class="section-note">All DR international airports</span>
+  </div>
+
+  <div class="charts-grid">
+    <div class="chart-card">
+      <div class="chart-title"><span class="dot"></span>Passengers by airport (millions)</div>
+      <div class="chart-wrap" style="height:280px">
+        <canvas id="airportChart" role="img" aria-label="Horizontal bar chart of passengers per airport in 2024"></canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title"><span class="dot"></span>Market share — air arrivals</div>
+      <div class="legend">
+        <div class="legend-item"><span class="legend-dot" style="background:#c9a84c"></span>Punta Cana 63%</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#22a99a"></span>Las Américas 16%</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#4e9bb5"></span>Cibao 8%</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#e07b35"></span>Puerto Plata 4%</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#4a5652"></span>Others 9%</div>
+      </div>
+      <div class="chart-wrap" style="height:280px">
+        <canvas id="shareChart" role="img" aria-label="Donut chart showing airport market share"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-title"><span class="dot"></span>Year-over-year growth by airport 2023→2024</div>
+    <div class="chart-wrap" style="height:200px">
+      <canvas id="airportGrowthChart" role="img" aria-label="Bar chart showing YoY airport growth rates"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- PUERTO PLATA SECTION -->
+<section class="section" id="puerto-plata">
+  <div class="section-header">
+    <h2 class="section-title">Puerto Plata Deep Dive</h2>
+    <span class="section-note">Gregorio Luperón International Airport (POP)</span>
+  </div>
+
+  <div class="pp-hero">
+    <div>
+      <div class="pp-badge">⚡ Fastest-growing airport in DR</div>
+      <h3 class="pp-title">Puerto Plata is on the move</h3>
+      <p class="pp-desc">After recovering from pandemic-era lows, Gregorio Luperón International Airport posted the highest year-over-year growth of any airport in the Dominican Republic in 2024 — a 20% surge to 880K passengers. With Miami, Toronto, and New York JFK as its top routes, the north coast is drawing significant North American and Canadian traffic.</p>
+    </div>
+    <div class="pp-stats">
+      <div class="pp-stat">
+        <span class="pp-stat-num">880K</span>
+        <div class="pp-stat-label">Total passengers 2024<br>up from 645K in 2023</div>
+      </div>
+      <div class="pp-stat">
+        <span class="pp-stat-num">+20%</span>
+        <div class="pp-stat-label">YoY growth 2023→2024<br>Best in the country</div>
+      </div>
+      <div class="pp-stat">
+        <span class="pp-stat-num">6%</span>
+        <div class="pp-stat-label">National air arrival share<br>Jan–Apr 2025</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="charts-grid">
+    <div class="chart-card">
+      <div class="chart-title"><span class="dot"></span>Puerto Plata passenger traffic 2021–2024</div>
+      <div class="chart-wrap" style="height:240px">
+        <canvas id="popChart" role="img" aria-label="Bar chart of Puerto Plata airport passengers 2021 to 2024"></canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title"><span class="dot"></span>Top routes from Puerto Plata (POP) — 2024</div>
+      <table class="routes-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Destination</th>
+            <th>Passengers</th>
+            <th>Volume</th>
+          </tr>
+        </thead>
+        <tbody id="routesBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SOURCE MARKETS -->
+<section class="section" id="markets">
+  <div class="section-header">
+    <h2 class="section-title">Source Markets</h2>
+    <span class="section-note">Share of air arrivals — 2024</span>
+  </div>
+
+  <div class="markets-grid" style="margin-bottom:2rem">
+    <div class="market-card">
+      <span class="market-flag">🇺🇸</span>
+      <div class="market-pct">50%</div>
+      <div class="market-country">United States</div>
+    </div>
+    <div class="market-card">
+      <span class="market-flag">🇨🇦</span>
+      <div class="market-pct">12%</div>
+      <div class="market-country">Canada</div>
+    </div>
+    <div class="market-card">
+      <span class="market-flag">🇵🇦</span>
+      <div class="market-pct">6%</div>
+      <div class="market-country">Panama</div>
+    </div>
+    <div class="market-card">
+      <span class="market-flag">🇨🇴</span>
+      <div class="market-pct">5%</div>
+      <div class="market-country">Colombia</div>
+    </div>
+    <div class="market-card">
+      <span class="market-flag">🇵🇷</span>
+      <div class="market-pct">5%</div>
+      <div class="market-country">Puerto Rico</div>
+    </div>
+    <div class="market-card">
+      <span class="market-flag">🌐</span>
+      <div class="market-pct">22%</div>
+      <div class="market-country">Rest of world</div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-title"><span class="dot"></span>Visitor origins — flight operations share 2024</div>
+    <div class="chart-wrap" style="height:220px">
+      <canvas id="marketsChart" role="img" aria-label="Horizontal bar chart of visitor source markets"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">Key Insights</h2>
+  </div>
+  <div class="insights-grid">
+    <div class="insight-card">
+      <span class="insight-icon">🚀</span>
+      <div class="insight-title">Record-breaking 2024</div>
+      <div class="insight-body">The DR welcomed 11.2M visitors in 2024 — the highest in its history — with air arrivals up 32% vs pre-pandemic 2019 and cruise traffic up 141%.</div>
+    </div>
+    <div class="insight-card" style="border-left-color: var(--teal)">
+      <span class="insight-icon">✈️</span>
+      <div class="insight-title">Puerto Plata leading growth</div>
+      <div class="insight-body">POP posted the fastest airport growth in the country at +20% YoY, recovering from 387K passengers in 2021 to 880K in 2024 — a 127% climb in just 3 years.</div>
+    </div>
+    <div class="insight-card">
+      <span class="insight-icon">💰</span>
+      <div class="insight-title">$10.9B economic engine</div>
+      <div class="insight-body">Tourism represents 8.8% of DR's GDP — the highest tourism-to-GDP ratio in Latin America after El Salvador, surpassing Colombia, Brazil, and Panama in absolute revenue.</div>
+    </div>
+    <div class="insight-card" style="border-left-color: var(--teal)">
+      <span class="insight-icon">📈</span>
+      <div class="insight-title">2025: Another record year</div>
+      <div class="insight-body">Jan–Aug 2025 alone saw 8M+ visitors — a 49% surge vs the same period in 2019. Full-year revenue is projected to surpass $11B for the first time.</div>
+    </div>
+    <div class="insight-card">
+      <span class="insight-icon">🚢</span>
+      <div class="insight-title">Cruise tourism exploding</div>
+      <div class="insight-body">Cruise arrivals grew 141% compared to 2019 and 18% over 2023. The DR is on track to break the 3M cruise passenger barrier, cementing its position as a Caribbean cruise hub.</div>
+    </div>
+    <div class="insight-card" style="border-left-color: var(--teal)">
+      <span class="insight-icon">🏨</span>
+      <div class="insight-title">Capacity expanding fast</div>
+      <div class="insight-body">With 87,322 hotel rooms and 10,060 more in construction across 42 projects, the DR is aggressively building capacity to support the tourism boom.</div>
+>>>>>>> 81d3aac48815c4639c54236de2ca5e6191d12b47
     </div>
   </div>
 </section>
 
 <footer>
+<<<<<<< HEAD
   Sources: MITUR · Banco Central RD · World Bank WDI (UN Tourism, CC BY 4.0) · Google News RSS · DR1 · CaribJournal · Dominican Today.
   Data refreshes automatically via GitHub Actions; this page re-checks every 10 minutes.
 </footer>
@@ -443,6 +1439,242 @@ async function loadWB() {
 load('data/monthly.json').then(renderMonthly).catch(() => pill('st-monthly', 'MITUR data unavailable', 'warn'));
 loadNews(); loadWB();
 setInterval(() => { loadNews(); loadWB(); }, 10 * 60 * 1000);   // re-check every 10 minutes
+=======
+  <div class="footer-brand">🇩🇴 DR Tourism Intelligence</div>
+  <div class="footer-sources">Sources: MITUR · JAC · Banco Central · ASONAHORES · UN Tourism · 2025 data</div>
+</footer>
+
+<script>
+const GOLD = '#c9a84c';
+const TEAL = '#22a99a';
+const ORANGE = '#e07b35';
+const BLUE = '#4e9bb5';
+const GRAY = '#4a5652';
+const LIGHT = '#f0ede4';
+const MUTED = '#8a9490';
+
+const gridColor = 'rgba(255,255,255,0.06)';
+const labelColor = '#8a9490';
+
+const baseOpts = {
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: { legend: { display: false } },
+  scales: {
+    x: { ticks: { color: labelColor, font: { family: 'DM Sans', size: 11 } }, grid: { display: false } },
+    y: { ticks: { color: labelColor, font: { family: 'DM Sans', size: 11 } }, grid: { color: gridColor } }
+  }
+};
+
+/* Visitors chart */
+new Chart(document.getElementById('visitorsChart'), {
+  type: 'bar',
+  data: {
+    labels: ['2019','2020','2021','2022','2023','2024','2025 est'],
+    datasets: [{
+      data: [6.4, 2.4, 5.3, 7.2, 9.6, 11.2, 12.5],
+      backgroundColor: [GOLD, ORANGE, TEAL, TEAL, TEAL, TEAL, 'rgba(34,169,154,0.4)'],
+      borderRadius: 3, borderSkipped: false
+    }]
+  },
+  options: {
+    ...baseOpts,
+    scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, ticks: { ...baseOpts.scales.y.ticks, callback: v => v + 'M' } } },
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ` ${ctx.parsed.y}M visitors` } } }
+  }
+});
+
+/* Revenue chart */
+new Chart(document.getElementById('revenueChart'), {
+  type: 'line',
+  data: {
+    labels: ['2019','2020','2021','2022','2023','2024'],
+    datasets: [{
+      data: [7.5, 1.4, 5.7, 8.5, 9.8, 10.9],
+      borderColor: GOLD,
+      backgroundColor: 'rgba(201,168,76,0.08)',
+      fill: true, tension: 0.4,
+      pointRadius: 5, pointBackgroundColor: GOLD, pointBorderColor: '#0b0f0e', pointBorderWidth: 2
+    }]
+  },
+  options: {
+    ...baseOpts,
+    scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, ticks: { ...baseOpts.scales.y.ticks, callback: v => '$' + v + 'B' } } },
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ` $${ctx.parsed.y}B` } } }
+  }
+});
+
+/* Air vs Cruise */
+new Chart(document.getElementById('airCruiseChart'), {
+  type: 'bar',
+  data: {
+    labels: ['2019','2021','2022','2023','2024'],
+    datasets: [
+      { label: 'Air', data: [6.47, 4.97, 7.17, 8.06, 8.54], backgroundColor: GOLD, borderRadius: 3 },
+      { label: 'Cruise', data: [1.1, 0.33, 0.71, 2.24, 2.65], backgroundColor: TEAL, borderRadius: 3 }
+    ]
+  },
+  options: {
+    ...baseOpts,
+    scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, ticks: { ...baseOpts.scales.y.ticks, callback: v => v + 'M' } } },
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y}M` } } }
+  }
+});
+
+/* GDP chart */
+new Chart(document.getElementById('gdpChart'), {
+  type: 'line',
+  data: {
+    labels: ['2019','2020','2021','2022','2023','2024'],
+    datasets: [{
+      data: [8.1, 2.2, 5.8, 7.4, 8.13, 8.8],
+      borderColor: TEAL,
+      backgroundColor: 'rgba(34,169,154,0.08)',
+      fill: true, tension: 0.4,
+      pointRadius: 4, pointBackgroundColor: TEAL, pointBorderColor: '#0b0f0e', pointBorderWidth: 2
+    }]
+  },
+  options: {
+    ...baseOpts,
+    scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, ticks: { ...baseOpts.scales.y.ticks, callback: v => v + '%' }, min: 0 } },
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ` ${ctx.parsed.y}% of GDP` } } }
+  }
+});
+
+/* Airport horizontal bar */
+new Chart(document.getElementById('airportChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Punta Cana','Las Américas','Cibao','Puerto Plata','La Romana','Samaná','La Isabela'],
+    datasets: [{
+      data: [9.55, 5.48, 2.29, 0.88, 0.17, 0.11, 0.067],
+      backgroundColor: [GOLD, TEAL, BLUE, ORANGE, MUTED, MUTED, MUTED],
+      borderRadius: 3
+    }]
+  },
+  options: {
+    ...baseOpts,
+    indexAxis: 'y',
+    scales: {
+      x: { ...baseOpts.scales.x, ticks: { ...baseOpts.scales.x.ticks, callback: v => v + 'M' }, grid: { color: gridColor } },
+      y: { ...baseOpts.scales.y, grid: { display: false } }
+    },
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ` ${ctx.parsed.x}M passengers` } } }
+  }
+});
+
+/* Airport market share donut */
+new Chart(document.getElementById('shareChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Punta Cana','Las Américas','Cibao','Puerto Plata','Others'],
+    datasets: [{
+      data: [63, 16, 8, 4, 9],
+      backgroundColor: [GOLD, TEAL, BLUE, ORANGE, GRAY],
+      borderWidth: 0, hoverOffset: 8
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    cutout: '65%',
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ` ${ctx.label}: ${ctx.parsed}%` } }
+    }
+  }
+});
+
+/* Airport YoY growth */
+new Chart(document.getElementById('airportGrowthChart'), {
+  type: 'bar',
+  data: {
+    labels: ['La Isabela','Puerto Plata','Samaná','Cibao','La Romana','Punta Cana','Las Américas'],
+    datasets: [{
+      data: [41.27, 20.25, 16.25, 9.08, 3.48, 2.30, 0.25],
+      backgroundColor: ctx => ctx.raw > 15 ? TEAL : ctx.raw > 8 ? BLUE : GOLD,
+      borderRadius: 3
+    }]
+  },
+  options: {
+    ...baseOpts,
+    scales: {
+      x: { ...baseOpts.scales.x },
+      y: { ...baseOpts.scales.y, ticks: { ...baseOpts.scales.y.ticks, callback: v => '+' + v + '%' } }
+    },
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ` +${ctx.parsed.y}% YoY` } } }
+  }
+});
+
+/* Puerto Plata bar */
+new Chart(document.getElementById('popChart'), {
+  type: 'bar',
+  data: {
+    labels: ['2021','2022','2023','2024'],
+    datasets: [{
+      data: [387, 530, 645, 880],
+      backgroundColor: [BLUE, BLUE, TEAL, TEAL],
+      borderRadius: 4
+    }]
+  },
+  options: {
+    ...baseOpts,
+    scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, ticks: { ...baseOpts.scales.y.ticks, callback: v => v + 'K' }, max: 1000 } },
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ` ${ctx.parsed.y}K passengers` } } }
+  }
+});
+
+/* Source markets horizontal bar */
+new Chart(document.getElementById('marketsChart'), {
+  type: 'bar',
+  data: {
+    labels: ['USA','Canada','Panama','Colombia','Puerto Rico','Others'],
+    datasets: [{
+      data: [50, 12, 6, 5, 5, 22],
+      backgroundColor: [GOLD, TEAL, BLUE, ORANGE, BLUE, GRAY],
+      borderRadius: 3
+    }]
+  },
+  options: {
+    ...baseOpts,
+    indexAxis: 'y',
+    scales: {
+      x: { ...baseOpts.scales.x, ticks: { ...baseOpts.scales.x.ticks, callback: v => v + '%' }, grid: { color: gridColor }, max: 55 },
+      y: { ...baseOpts.scales.y, grid: { display: false } }
+    },
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ` ${ctx.parsed.x}% of flight operations` } } }
+  }
+});
+
+/* Routes table */
+const routes = [
+  { city: 'Miami', flag: '🇺🇸', passengers: 158558 },
+  { city: 'Toronto–Pearson', flag: '🇨🇦', passengers: 156855 },
+  { city: 'New York–JFK', flag: '🇺🇸', passengers: 146921 },
+  { city: 'Montréal–Trudeau', flag: '🇨🇦', passengers: 125549 },
+  { city: 'Newark', flag: '🇺🇸', passengers: 57285 },
+  { city: 'Charlotte', flag: '🇺🇸', passengers: 43183 },
+  { city: 'Québec City', flag: '🇨🇦', passengers: 25195 },
+  { city: 'Frankfurt', flag: '🇩🇪', passengers: 20853 },
+];
+
+const max = routes[0].passengers;
+const tbody = document.getElementById('routesBody');
+routes.forEach((r, i) => {
+  const pct = Math.round((r.passengers / max) * 100);
+  const row = document.createElement('tr');
+  row.innerHTML = `
+    <td><span class="rank-badge">${i+1}</span></td>
+    <td>${r.flag} ${r.city}</td>
+    <td>${r.passengers.toLocaleString()}</td>
+    <td>
+      <div class="bar-inline">
+        <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+      </div>
+    </td>
+  `;
+  tbody.appendChild(row);
+});
+>>>>>>> 81d3aac48815c4639c54236de2ca5e6191d12b47
 </script>
 </body>
 </html>
