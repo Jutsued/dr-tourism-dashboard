@@ -1,16 +1,485 @@
 {
-  "updated": "2026-11-13T05:40:00+00:00",
-  "_note": "Seed file built from real articles. The GitHub Action overwrites it with live feed results on its first run.",
-  "items": [
-    { "title": "The Dominican Republic Just Welcomed More Than 56,000 Cruise Passengers in One Week", "url": "https://www.caribjournal.com/2026/11/06/dominican-republic-cruise-passengers/", "source": "CaribJournal", "date": "2026-11-06T12:00:00+00:00", "lang": "en", "official": false },
-    { "title": "Dominican Republic tourism reached 9.2 million visitors from January to September 2026", "url": "https://www.riotimesonline.com/dominican-republic-tourism-9-2-million-visitors-2026/", "source": "Rio Times", "date": "2026-10-07T12:00:00+00:00", "lang": "en", "official": false },
-    { "title": "República Dominicana recibe más de 8.5 millones de visitantes en los primeros ocho meses de 2026", "url": "https://presidencia.gob.do/noticias/republica-dominicana-recibe-mas-de-85-millones-de-visitantes-en-los-primeros-ocho-meses-de", "source": "Presidencia RD", "date": "2026-09-08T12:00:00+00:00", "lang": "es", "official": true },
-    { "title": "Dominican Republic Tourism Hits a Record, With 7.7 Million Visitors in Seven Months", "url": "https://www.caribjournal.com/2026/08/09/dominican-republic-tourism-record-again/", "source": "CaribJournal", "date": "2026-08-09T12:00:00+00:00", "lang": "en", "official": false },
-    { "title": "Dominican Republic welcomes record 7.7 million visitors in first seven months of 2026", "url": "https://dominicantoday.com/dominican-republic-welcomes-record-7-7-million-visitors-in-first-seven-months-of-2026/", "source": "Dominican Today", "date": "2026-08-04T12:00:00+00:00", "lang": "en", "official": false },
-    { "title": "Dominican Republic Tourism Surges to Record First Half, Putting 12 Million Visitors Within Reach", "url": "https://www.caribjournal.com/2026/07/05/dominican-republic-surges-12-million/", "source": "CaribJournal", "date": "2026-07-05T12:00:00+00:00", "lang": "en", "official": false },
-    { "title": "La República Dominicana alcanza récord histórico con la llegada de 6.6 millones de visitantes", "url": "https://presidencia.gob.do/noticias/la-republica-dominicana-alcanza-record-historico-con-la-llegada-de-66-millones-de", "source": "Presidencia RD", "date": "2026-07-02T12:00:00+00:00", "lang": "es", "official": true },
-    { "title": "Dominican Republic welcomes record 3.7 million visitors in Q1 2026", "url": "https://dr1.com/news/2026/04/14/dominican-republic-welcomes-record-3-7-million-visitors-in-q1-2026/", "source": "DR1", "date": "2026-04-14T11:09:07+00:00", "lang": "en", "official": false },
-    { "title": "Turismo crece más de un 13% en febrero al recibir 1,184,902 visitantes", "url": "https://newsinamerica.com/pdcc/turismo/2026/turismo-crece-mas-de-un-13-por-ciento-en-febrero-al-recibir-1184902-de-visitantes/", "source": "News in America", "date": "2026-03-10T12:00:00+00:00", "lang": "es", "official": false },
-    { "title": "Dominican Republic Tops 800,000 Air Arrivals in January, In Strong Start to 2026", "url": "https://www.caribjournal.com/2026/02/12/dominican-republic-air-arrivals-january/", "source": "CaribJournal", "date": "2026-02-12T12:00:00+00:00", "lang": "en", "official": false }
-  ]
+ "updated": "2026-11-13T23:32:24+00:00",
+ "items": [
+  {
+   "title": "Presidente Luis Abinader inaugura puente Antonio Guzmán, sobre el río Camú",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaHpINGJObEdHS2kwUUxBM19la2NqTFVoSWRhbmRqN2NLREJLdmtUTXgzcGY5aVBxOTdSSlJLWkdzZXllYTY0MDZIQVp6TWRpcGJDRklNZjRQWDk5MmF1YkVkNWhseERzTS1MU3c3UDI3MXNkYU44WkItM01leXlBLWZLNWlvYkFKMElZZTBpNUltcDVTYm55RmFQdHRKZmlLN3dlcWVfU1kwaE52UXc?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T22:11:48+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Presidente Luis Abinader destaca aumento de la producción de pollo, huevos, arroz y plátano impulsada por trabajo conjunto que desarrollan los productores y el Gobierno",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcHg2amNJNlNWZzF3TzFGdlpJUWRucjBva0dTUGxieEVLOXdRUzQ5Q3JFeFVMRnVWNnl3SjFseHoxUjljaldCajUyQV9ic0hQaE9iemR5clIyVTdRdWVpWU9kQWZJc0RHXzc1OGV4em95OE1Ya0ZkdWJYX1otVTN4WHZRdGM3Q2xZU0Y0Z0pRSGxhYXBzamZxQUc4TU10RVBJbHRBS1BzZWo3eFVGZVpTM3hDRXB3ZnRKcGVuUl9Kc3ZEa3c?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T21:36:24+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Presidente Luis Abinader anuncia construcción de moderno hospital materno-infantil en La Vega y nuevas unidades especializadas",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQ1JCTE11MTNVUUdHUG5DWHJlWXBWcVZReDdxdTZxbWNUM3pGS1ozR1NoZ2J3eHdwUEl5di03Tk96ZEdscUh0Q2FBZFZMem9YUk03UHN3TW5hMjNEdGtEcE80UU15WTZlNnUtN3p3Vm5YMEJCUE5DR0NpckQ5eUgwR0NWR1hmX0tzMGdOS1dWSGc1Z0dGOXBfRmFuUGs4aWJCZUhaT1V4TTBpUG0zbzgtQ2UzaWRKc29NZml6U0Z3WVpaZw?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T20:11:52+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Indotel gradúa en San Cristóbal a 1,500 personas del programa Talento Digital",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQVI4RFgxNE4wRjVsd1VsLVBiTlJxMy03WE9QUHVDdFBTZWwtX05uZ3lid3RiZkxHREpPN3RvNjFQVEF0S0hVSjZ0UlJDVlhRTzZ4N0JOTmExYjlNblRYTC1sMGZ2QUl4OGsxeTEyZUc5UVFGTEFwc21ZVzlvS1dua3RLMjdRMEJ3eXFBeDVVUnVWUHBCQjZ1NEVITkJYdFludEtyNGd3czZnVmJOSFcw?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T19:03:47+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "1,657 nuevos técnicos impulsan las oportunidades de desarrollo y transformación económica de la región Sur",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVFk4Uk9OT05hZ1IxMkc0Q1VIaEpUNnJhMEpEemkwSF9wY2ZfdnFsSGtWRURzNnJvcUFzVGpMdk1Oak90d2VHMmEtQzdzTDZYd1JEYzdaeEJSR0dCdVpPbEVKSTRLOHNNM2tGNWxWTFFUSE9lalM2ZDRIeVpzcnBqVnhSZzJkb3QtVzJhbm00VmlKYW9Lc2ZWcGdRM05uX1pnV0N3Z1NWemtUNGg4QnJQazhtVk1uOHkyVEZja0JqbS1PZw?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T18:15:21+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "ETED realizará intervención de emergencia en subestación de Sánchez, Samaná, este sábado 14 de noviembre",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQc0xOU1RGS1YtaEt4b0F4WENURWFRd1d2eFoxclJnN0RialdkenJpVUlGVWxBc2dkNHRrdGQ1ZEpGQkdOd0FxMjBWNHdIbnloVHdoUThfMkV5Yk1aZExLYkpMMm8xcmtKcWlfMHItdkRSLTlDYmpjcXh4ZkNDa0RkUWpQYjhsNmpDSEJ3bzE0bTctc0ZDMklSbGxEVHhUb1k1OXlheDBBOUxLWU5rdjAtekpMNGZIZXpEZldyT2FyaEFJNUk?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T18:00:08+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Presidente Luis Abinader y vicepresidenta Raquel Peña encabezan sexagésimo segundo Consejo de Ministros en La Vega",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVHBVblhmdGVWWEoxaE9Oei0tSk5ZcVFGY01Ra0hLWENrYWZIZm51M245bEhBdGxjRUFCWEZsX3VMMFZ2aFR1OEJaZXQtYjVjTF9FZW1EazFjalVoa2RPVUQ5eXR5aU43UkNQbnRhSnRLWWhpNzNoZ1NjRzdFWmNLNjFDVEI4dUxxVERsOU9LVTE2MzRMdjhqT25IWV9QY2RJTUIxUkk0NlF0NE4waUtFVVM3ZW9wTzBVMDhmbjdmZERrY0FZ?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T17:12:56+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "ONDA y OMPI concluyen curso regional sobre IA y derecho de autor",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZ1dKUW9OdHN5M0dKZ01xdmRGeFBseUNIVnZ2cDNZam9NTDFZQm1SQU0wRTMwRWZmTXRDRmlpVzdPTG85ZC0yVXF4ZTU3QTdhajZBUEFLYjlhVF9pTm9vbXVBek5RdlpPRFVxZFFmcU1tMENZSFZqdjY2dDFVQlhtYjg3TFNMUl9ZdDJ6M1NDaUdFYktJcUpXVjA4LVhuVHdxdkE?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T16:39:37+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "República Dominicana impulsa la defensa de los pequeños Estados insulares frente al cambio climático en la COP31",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWEk1WUlCSmVJQ19LMjFqem1tblVmelJveFlPRUV2ODhoRmxvVzFIZ2JqbTMzTTBObWRaN1ZScWwxZkd4djlRSWpIbjExcXM5bHlfQzhORDdYZXlvZmgxYjJ5aG5zQUQ3LUFhRE9hdjhnREJHaV82M05XQzVtSERoN1JISWoxaUkwSDF3ZmczNVpWdGN3SEtpdjVLOFpKRFd1S2tOUzFIZTNnS25mZF9lOXZRaVE5NzF6TDhPWklFU05xZThz?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T14:57:08+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Inefi anuncia la construcción de un moderno techado en Villa Tapia",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVUZJRlZxSGM3dmh1OWplUGhZVVpiS0hKVEp3b0oyaTVhQlU0b1lZVWZsWFd2c3l3OFI3eTl6RkVKVEF4SktVRjBRbXdEOWdEeEg3U0ZSN1Q4Rm55WGRUci15eW1oZndySjB1MHZOR0NIWWNLeDdzU0x2QXQxWVo5c1NQcHhfNDNnLUVtVEVGY2hSWDFZTXE4anZxazlWWFBmQ3loNg?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T14:38:04+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Programa Impulsa tu Futuro conecta el talento dominicano con 25 universidades internacionales",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPOE9IbFFKUGJFSVFDaGdLRmI3VVhNcjB4NENibVhkOGYteWJJc2JsTTl2X2tYWTAyRjhzNEJ4bTY4eWJzT2ZxejEzcWdOQjdkWllKTTkyX0h4NHVISUc4UUV0dHNudlpSTU1KTkJaN19WRWFCbDlQc1JVcXNNR3hIeXZaMDd1YzBYN1RLWVUxNUdtcENMc0VlWnU4bGswcVJOUHV4SFpMWEo4aE9qT2hyVDJ4WQ?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T14:15:09+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Ministerio de Cultura inaugura el festival Cultura en el Sur en Azua",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQcmt6R2M1djlBQ0hneDBlaFF1U3NoWEhLTWl3cXJOQWZtazlYN05HbnNTVnh3MThJNWlPWEM3SXBPQ3d5SHlIWm5KRDZRaC1aNi1sUUxzU1JUQnM5eG1JNTVOcHhYQ1lLcEs1QzgybzNQcU01QUt6QmZjMlRFdHlHNEtqc3VBMjUxWUhyMEtHRTNuSG93RVhJNlZCX29oOVNfcFZKeGZRWQ?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T13:48:30+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Sipen inaugura Escuela Previsional Persia Álvarez de Hernández en honor a la primera superintendente de pensiones",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPNFZidjJmVFlOQkQ4TzJlS1VkVmUyb2R4TUpDUDNSWVFRVTNFZHNMLVFmUnlSWmUtX0NvUFFqZF9vbUY3VnZJb2JaeF9WUnRlX3UwNmpVRUtETURGczljb3FvbVUzY2d1aFFUTEJWYTcxTWlKbU5ET0h4Z0ZvX193UzFvY0V6dndLbHd1TVI2MFBYdng3WUdDT3AySnd2X0t3UUNBMkdqRF9EaUFpQS1qYWhGNmo3S2RkalE?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T13:38:10+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Caasd cerrará tramo de la avenida Jiménez Moya por ampliación del alcantarillado",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZXJxQURibnFJd3F2a3NOMGRlcEdpeVotdmEtZUdTUEhIUGRTdmo0Q1BNRmI1dlI1bFFmamZ4SGpEbWpsaW1FOW5BSXFGNERhV2VNRjJhMV9jM2R5THh4Zm1sN1Z6dy0zSlZCWkxTOV8wcHY0QWJJY2pnVEhCR1plN3piemRQZXdFQXlSNC0wQlltdlhTQzV4TVlkTEZBMHIwZkp1RzJqcHZicEFoeV83cnJQVGpLRjBfY2dUVQ?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T13:32:24+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Coraasan inicia sustitución de línea de impulsión en Santiago para mejorar el servicio de agua potable",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQTBzc2ZtUGMzZkZRaEM3bEJIVmJLcmd0eVBSNnMtdVJtSGpRc0JCWjF3N0RacG9WWFU0UE4waUlZY2pGUHNwdktJS25WeGozQnFUeDhLcmR0SXYyTlJyTG1HN3Z4RjM0djdJTFhxdnZGYXY2ZmJEUWtpcHFMYVl1T2ptLW1JX0NqczJFa1MtX29BU0dEZWJrcU9uUWRqeHBCaEduTzdNaF9LaTJOS1dGY0tUZmlyNWk1cHJjd1VUNzBWS2s?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T12:46:54+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Indotel y Escuela Nacional de la Judicatura elaborarán compilación de precedentes sobre regulación de telecomunicaciones",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRnAyVnptNXpELXJkbFVkZ3lwek9SdGEyT3Y5YnBlS0lHTnF6UjJyR3BQWkpVRE5XQ2lBUmJheTliR2k1ZUZXU3R3b1dxM0dJTkg1RVVpVy1SeGl4aVdpSXlFeWZEcWxiR2gyVE85V1hYRXF1akxsVndPa3ZpcGVkaEcyOUIwYmJLNksxeDl4YVNGekw2bmdvcDc2QTc5bURLSUxpMl9qODVhelFWNG5JRG9nVTJ0NUF1V1lFaXBlTUI?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-13T12:34:30+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Bogotá estrena ruta aérea directa con Puerto Plata, República Dominicana",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdjV3TkxZUWFLazJhcGpBZnVyazNOM2kzX29Md1RKdDNuVHM5Tk55SVo2TnJ1T3JZdjc1dzB0ZlMtTmhCZGxMd3AyZ01PcVl0dlJJTnBMOGlwUXpjaW9WM0NCa1JPMndyWXZvMms4YzB6NFpDS0JoX2hKb3YxVGdxTlF6SXNObUVGODdvbl9pSVhzeTgwQkRxdGdoOHZqcThnWU10YkdUN1lZMG1scF8zZkZ3?oc=5",
+   "source": "Radio Santa Fe",
+   "date": "2026-11-13T01:30:22+00:00",
+   "lang": "es",
+   "official": false
+  },
+  {
+   "title": "La campeona olímpica Marileidy Paulino agradece al presidente Luis Abinader por el apartamento que le entregó el Gobierno y asegura ahora estará “más cerca del Centro Olímpico”",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQW9MMkZZUkRjX09pdC1PWXhFMXlSMmQ1b2VDRmFxQjVxWWZXbUk3VnctU0x1cHBOT0RIMXdmMDh1LXY2VnFhc1dtS0RET3pzOHlxVFVnN01XNVZaUEIwdF9kdnQ0ZFFTam9wTVFWV1hIaEs2ZE5uSmtkbDV6VTZLOGV2R1pVbTBzV2hMNjhFcERWUmFfN3J3d2M4dmRReWlReGJUQ1gteFRaRXpVNHdQc3RTMHBaYlVyamc?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-12T23:10:16+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "La multinacional SpaceX destaca presencia de 50,000 clientes con antenas Starlink en República Dominicana",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSm94blJjZWltcVpuMGdJaWFSUU0wM0MzNUlMS1NHVzdrTlRMUFMzdGZySTBIQk0xbWd6c3NjQW92bGpXOTF4UDZLcEVacm5VSjZiZk93ZXFTNV9vb3FnZVRLQmdYWXBDY0xxY01SLWpCUWo2Zk9VTGtVREhqSV9BdUcxeTRKUDNHUlJXbF9NQmlGN2g2aWRMQWVzU2xLMlc2elVod2FhU0sxVkRmMTZyallHMUJQb3hXNl84aldxaTg?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-12T23:03:14+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "República Dominicana fortalece su agenda de cuidados como política de Estado y eje del desarrollo nacional",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQd3BITG1nZTJYd0g5VzVDN0xpRVJtcHVfR1EtRTB1dnRISmdvQlZwcndhMHVlaEhnYlkxODhhTG84eEM2aV9CdHFBcEFvNTI0TkhiT1Z2MWtCZXlxTWFZaUJqQXoxY0lHVjRzWGpaLWxOLXdMUEhUbmc3NlRRQ1NQaFJMRmc0bHY5ZDFkR2tMeWQ5OEJtZUpwS3dIZllkWmhqTVpOTmd3SUItSkd5NFJ2bXU4ZC1WQTdPMV9aMWlCaFZBdjJL?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-12T18:05:19+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Ministerio de Educación e IDEICE reconocen a investigadores con el Premio a la Evaluación e Investigación Educativa Transformadora 2026",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQY0ItcWJKLXNTS1BQbE84Mkk0UHp4dVZlN0VsVHViSUlkRjdWc2ZVYUVJUy1xMjI5am5MbS1rT2RmeTlxTUplQ00teUtWXzRaVDYyaDJFaUxpQm5Iak1VZl9sX040T25seU1mUElhRjlqOGdKQ3JIQXdGd1lwc25nV2YxdW5OUnJEVVVDMl9HVUtjbnl1OXpUWWZDdmdybmVTLVV3UkVwVUVBTnNhYnRGamZpdEJfNUIxVC0tbFBBS212bWJkbVE?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-12T17:56:16+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Gobierno reconoce como Estudiantes de la Semana a Aurora Valenzuela y Yojanan Ramírez por su formación integral y compromiso con los valores",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbWZhYkZndUZUWFlmbVRmVFRhcDBhdC1uU0R0S19hUkJQQURXM0xhMjh2Q04zUlI5bVZFNERSVHYwS3pBSGx4LVlVbHpoek1lTnNJSXJ2aTcxN1VYMUJoSDA1bURidXExNHJJTDR1Q2EtcjVHMFhlUUc4eURVRzBiNEtubDRaZHdHdWVPUGdWTWZwbWlVRVdnNU1ob2pXQkI3bjA2UTNRQXJNZ3VlZk1Uc0w2RmpGR0JMaGs2Qzc1bExhTjh2eVpEdEd3?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-12T17:43:42+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Presidente Luis Abinader anuncia congelamiento de precios de combustibles hasta el 7 de enero de 2027, siempre que el subsidio no supere los RD 1,500 millones semanales",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPdGhPNXE4aGNjeG5vODVXTWtFOGVzLUpNSzc3Z0cxdHpQRFFYV19iR1NFY25QTk5wQnY5VER4SmNNSjNvNlZSU014bFRzRmVLUEVScS1CZkR2S1NaRUZIUVAyUW41VE0wT3Vjb05qZi0xRW5OVHNYTFVZcWd4R3ltdU5tRjk1OWVnVFhxektneDlFRWtENjVkR1JQYkhyQU1VTGozbmVSV1EwaE1NZ3N6R2RYckpsUkFOUlZScFR0YkpzdFk3Smc?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-12T17:23:22+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Conape inaugura hogar de día en Bajos de Haina para atención integral de adultos mayores",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcXRxb3Rkb0U3cFlXenZ6RVh4cUdXTnR4eTctSVhSNnJnQ0w4WkxmeUhvMXh0UXlMbU1JN2ZCUmdSN3FrVEFMTGdKa0lBRWs4a3p0aTZZNGpyd1poWVkwTjNHYTVxbENlMVFEVUdYNHlHck9TWllxeEdFZ1VwSUlzeHNWWDVJYkRqOWZNRy1BM2M0X3p3Ml9yMkE4cTZ3WTI0MlZmTmxuZWczNzNMbFdiXzZ4MFMxYWxiV2lEQ0xNdU8zdE5qa193?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-12T16:34:42+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Presidente Luis Abinader encabezará Consejo de Ministros este viernes en La Vega",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOY29kMW9DeWRfaG1IdVpQOVhTUUNaWDM0Ty1rc1M2eGJ0Y0lkVnhIRGNRcFFrazNHMHNXVmo1RUFkbVJHQ0VWek5lNWR3VmktdGdtNTdnVmVfY0x6S2NWTzRja0ZXS0JLb3lOUUJLVTNTekFwZXh3X3BCTUEwbmVyX3dzMHR0d202VnFqNGplRG1adTd6NG1rRENkZGxQZ0t1ZkY1VmRORHRTUG10alpKTG5KV2pFT3p5Um40QQ?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-12T16:10:37+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "SeNaSa impulsa la cultura de calidad como eje para transformar los servicios y fortalecer la gestión institucional",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQR1BreEhhMFo2aFREZ2xCNFBndWZQVzYwNnRkb08xdkgxb05PR2I5bTJJaUtReVd6el9abUZTNEt2OUwwbkh5UE5WekFnR2ZQWG5tVER3YVd3MFpHcnJPbUVBZkUtNkROQ2pfYXI1Y1A3YWp0T3pNU0FHX0w3RG9rSHFTQkN2VEtqUVZLYVFfUWJlbVVxcXFXNlM3QnJkTmN5cWlzMldwdVdNYmdOdGlZTzdDb2tRcUswNkJSUGxiYzg5Z0E?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-12T16:01:27+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "SNS y Contraloría implementan sistemas de control interno y gestión financiera en 56 hospitales",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMFJNWGQtT2MyYWpzTmszbzgxMTBaYUV0Y2U3azBXOW1LX0RuZzZZeE50WUViTDB0TkVxVlRXcUVhaEthSG1fWHhUWmt1alkxeHZmcUFMLXM2QnRzalBiRHFweVNNNkdqOWlVSUxVNjRaOG80WFY3eUZXdEhHem1XZTZoc0JLUFM5eHJnTDRFaWMtLUljLXQxMU83QWFIUjBnYnBoU3RSWnY2UmthQkVNZUhjbzQzU25nOEtJdDd0RWt1dw?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-12T12:59:04+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "IMF praise and robust 5.6% September expansion underscore Dominican economy’s resilience amid global headwinds",
+   "url": "https://dr1.com/news/2026/11/12/imf-praise-and-robust-5-6-september-expansion-underscore-dominican-economys-resilience-amid-global-headwinds/",
+   "source": "DR1",
+   "date": "2026-11-12T06:53:42+00:00",
+   "lang": "en",
+   "official": false
+  },
+  {
+   "title": "Who has the route and the environmental study for the Amber Highway?",
+   "url": "https://dr1.com/news/2026/11/12/who-has-the-route-and-the-environmental-study-for-the-amber-highway/",
+   "source": "DR1",
+   "date": "2026-11-12T06:43:00+00:00",
+   "lang": "en",
+   "official": false
+  },
+  {
+   "title": "Presidente Luis Abinader designa miembros del Consejo de Juegos de Azar mediante el Decreto 810-26",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMlBzNnFNcWtqRTFUZlRXN2JTYXozdzMwVWp4N252Y0VIdUY3ZG1CS3o0ZDFfRlRya3lHazdHSk5NWTBMWU1UclMxUHFnQWU1TWxiWnJZSzlpLWxaLXotM3pDZVVmRnlXTE9iLVFhd256RnlCUk1aNjZvMjNwUV9mbjJQcEJUWFNlSE1UVFVkclk1MG1lT2doUnhuM2dES0oxTFhodUtiS3ZNaEVQZGhNYzBzbWEtclVmV1Vj?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-11T22:43:08+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Bogotá fortalece su conectividad internacional con nueva ruta aérea directa a Puerto Plata, República Dominicana",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPM0hNdTgzQ3FEd2Q3ZElkYndnckVmQ2kzNi1NMDRFTGlZLTZHV1NobVMzaVlqVjZTdDNNU0dtLXhyOE9rVFJUQzdtSFo2aFBSLUxUdDBWSERmY0d5aXBXeHJwOWZ6SzNYUjMwb0dpSkV6S3pubmV2bjAxREJCQjh4aWpwckdCdklaRjNDNEtrNmpmR3pYd0t4X1VISG1uYS1zNG85cmQ0VXJtRzRKMVZyTHkyWkpIZFJKWDhFN1ZPYw?oc=5",
+   "source": "Instituto Distrital de Turismo",
+   "date": "2026-11-11T22:21:15+00:00",
+   "lang": "es",
+   "official": false
+  },
+  {
+   "title": "Gobierno anuncia acueducto múltiple de Yaguate, San Cristóbal",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcFhiRzJEY2R1cmpsa2Y2dVhLMWlTZEtyUmZQSlFPZ0xvRHlXcFFvZFIxVzNYeTdsSlFVS3V6ZUpnMTVGNUVmd1R1THBxYUpZSktTeGlYRE13dG1yMmlxcVlKX19SNzhVOFBlTkJvbllRRnZ4Y2tyZU9XVy13Mnp6UzBOS2gxYzdHUk1xRER0RFBXcFMwX3JQNllSRkQ?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-11T20:09:37+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Presidente Luis Abinader da apertura a la XVI Cumbre Ameripol, que reúne a delegaciones policiales de América, Europa y otros continentes",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPajJQeFlOd0NhXzIwZ2xjT3VqaWNYa3dFelJVMWFEQkdmOWt1TWEyZE1GZm5TOHpSRGNKT0ZwNVY3MkhkQUg5NGI1MHQxUTQyQl9IRV9wXzAtbEQ2ajdHUGNzTE9SZkx2ZTJwaElxdGVaYXY0c2xTWlNSTEpySTZWbHYzY2JFa0lYQlBjb0tnNVR5MHBIN1MyUnpacGhoMkJXY1M4aTBZS3hJTzF0U3BWVHZhS3lKYWxIZHc?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-11T19:29:22+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Presidente Luis Abinader participa, junto con la primera dama Raquel Arbaje, en toma de posesión canónica de monseñor Carlos Tomás Morel Diplán como ordinario militar",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZW1HM0NLZ05yYWhkTGRnX1JiT2hFN3FJbUs3MkljOG1BanJWdkZmd04tcS1saHp3SElwaF9SQXE4anlZS0E0Y0hPRmpRb1g0WnVoc0JndXVGYXdNUVluaWkxM1RvNkNlbzRzVnJUUGtKeWxZVjB2TnRwYzNFRHFiNFNNMzV1VVZXQzBfcGxLTkU5Y2hSRS1rMExIcE5fRGVBQ1VlUDRnVlQ2M1ZDblFLRHpXb0pmdGQtaFlqN3V3?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-11T17:29:20+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Infotep graduará a más de 6,000 nuevos técnicos en cuatro ceremonias durante noviembre y diciembre",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQUEVXRmtEblU0WXZLYzVEMmhJQVdjZlBKSlBCdmVGTEg5MmJ3WC1SYVQ4X1hSdV9UN1dmQnhKaEdFSDNJWXVsY2tmQmx3N0FDVnJzeUlCTHUxOFoxMVY1NnNwQ3phMGpabW1EOXFtb0xqUmFHVk95OTVhZE9USVdvRVpfSjNyZ045cFcxNm5hQkVuT2lDeHFZaVljNXdxYmJJcWVFYVVMS3lvNXV0dzhTM0pzSVhWWXFjYmZCa0p3?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-11T14:57:48+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Gobierno formará a más de 3,000 servidores públicos en ética e integridad",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPN0ZNNXE1RVZONm1WbDR2ZVlWVm05aGNYaUlPdnpsMWdxQzh0Z2o0T3FUN2ZQTGtzeVNHTnZzcG1RdkJ0X2lCaWhJMGNBVmdObm93RlRScmVBTmRldENmbm1GcW1pLW10dkJpTUZsa2dIdzBRdk8wZEIzcUU2X3ZtaTBXTllIOERlbjJkbEYyZkQ5SEs3SFlUUWsxNXRUNW5Eel9WTEd6dlZRQQ?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-10T23:00:38+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "La República Dominicana conquista oro como Mejor Destino del Caribe en los Travvy Awards 2026",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPc3g5NWlLTTBoWVEwNlpTVUg5LVpyNHJtaUJqT21ScnJldkpUV0tWZlpaNHpjWUluRzZzc2RLdzhLbW9pb2Jfa1FEb2V3QTFTSXZXQXdpTFVqQnVlNlRQSHVMUUtaZTJBQ29DNG5aaEwxbWYxbVJsUGdMbmU5Z2l5OEN2a0JLTkpNdDdscmhZQS1ubHlPM0k0NU0yMGp1eE5ZUjE1RUJ0bGFMRFM0NDc2dEk4NjdPWjNaOGF3N2R2Tl9QZw?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-10T20:45:59+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "La inteligencia artificial gana terreno en la banca dominicana; 79 % de los bancos múltiples ya la utiliza",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNelR5YTY1SWtOWlRzZkZIRGZDT3lLQmhGX1huNmlJcXZzQU1sX0t1SUhuMUNncU85U0otU1Z4aEZ4dDNGX20yM0syT1lVNU5FaG9hVVZmVW11amFJQlo4OHc1d2JpLTNoVVdLSVBzRWdCLWlBeUd3cEkzR2V3Z0xUQ1pPV2NBYjc0dy1rT0R5dS1LYjZPNmRub05zUm9qUDRBOFFWMFptaHdEV2Frd0VEZzBfeWFOLWJKY2JWdFJPckVadU0?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-10T19:59:23+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Puerto Plata estrena conexión directa con Bogotá: Wingo volará dos veces por semana",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5NX0t4VXNUcHN6WG41UHNZeXN2RTBYaTBHV2dNeFlaSE4xT3JyUHhxN0o5dmtRZjQ4ZzVHN0JfMGI0ZW95X1VnVWcza2h0QUp1ZFYwTmtCOHdSV0RYUGFBZDlR?oc=5",
+   "source": "noticia.do",
+   "date": "2026-11-10T19:49:15+00:00",
+   "lang": "es",
+   "official": false
+  },
+  {
+   "title": "Presidente Luis Abinader expresa respaldo a su homólogo Nayib Bukele respecto al tema haitiano y destaca la cooperación entre la República Dominicana y El Salvador en logística e inteligencia",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNHBrVEtkNE9meTBReHFnTWlwV1VqMkFRc3dfdVhkZmhxZDBGdXo0czhZQURPX1lGUVhuQU1BZXZLaXNXLXlHVWNRYkNFTkNMaDB1SUdiQjlwdjdRanlKV1VRbkg4Xzh0bGNSWlB6a0JwUnhLME1TWjNjMllBTEFRUWtMN1NjSXFUR1l5MmxMd1ZzeFhQaDJGNmdlOF9jbUEtYXNlSU5NV0V6ZmNjcS1oa2pyWFdCaWsxQWdTZkNDeks?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-10T19:20:09+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Escuela del Ministerio de Trabajo gradúa a más de 500 jóvenes en diferentes áreas técnicas para su inserción laboral",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYVdPVUtXWjNWQUdkMTBPRDNhY1I5SmU4UngzN3lPdFBFM01nQ2MxcDgtenNyOHdINzFjaFp0MElVSjRONmV4N2lRRGFPdWxVX0VibzFqaW1xbThWbkJEWmRLel9ObzNYamtUbDFRWEdfNXlPeEVvekR6RmlKT3FmTUprOWI4eG1LbzZVU0VZclN6VUVJOVpTOHR5OHFqX3RzUlFLM0MwUEJqLU1Jai1aV3h6aFNKUUxwZFFFbWlvbFJJUQ?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-10T18:42:36+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "ProDominicana reunirá liderazgo e inspiración en el Encuentro Nacional de Mujeres en Exportación 2026",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNLTRvdWd6THJDZ1JpbEdwYzVqWklCNTU3TXpZSVVlOW9mTDB5MXJMbkFCTENuN19jSmxJOTU4aXJNUzZVWnVRYWpoeDdaWHBjT3h2bzhMV3RRMTJXaGFzVGxsM0FlRUFteEhVZFFWY1FRQm11TzR1cDY0eHNWUEcwQlo0eThWYUNVajZDcHM0bVNWZzdwMGlMU3Z4OUlJNTQ1bkNTbEhZSzB0N0tsUExEQmZtSWlnQTlJaFk1WA?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-10T18:11:47+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Agricultura inicia siembra mecanizada de habichuelas en San Juan de la Maguana",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPR0pXaFpWS2MyQ19TbWQzaC1xMldGMnhDUlVJeU0tUUZVcEdTREhTbExERTR3WksxLXREUGZqcHhDRkNFMEs4bnBYc3NfZTg0SEdmN21qejB1R2ZGa3FuQktVdno0Q05NcGNrRTNxNmRkMzhsZF9GNGVsaFRzeW93ZmhibGhZQ0tWcGJKdWtLcDFoMXpJWU4tcTZqZkRfQV9WdlZ3M0lTMFRWQnlXMWxJclBYMG8?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-10T18:00:45+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Presidente Luis Abinader encabeza segunda graduación del programa Talento Digital, que supera las 23,700 personas certificadas y los 110,000 inscritos",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOU2RXX2gtclZybjZJQzU4ZUZTQnZpcnV2RlhtM1hfVzVheGhUamxURDZ4X2tJei1MVVpVVkRwaTBSdkxYXzhUZGxWRmRfb2szUjZZYUE5ZWdhQWtMdmtFRDhzREtURDU1N2pWYnU1MFJ4R3BrUTV0a01KSG5mU0kzZEdUYWNaSmFMR0FBUW5ZazR0M0JVdXU4QzRDSEhISjF0cWxYNk5VWWFmS0dXTVRRMFRma2ZqSUZIaUEyN3NB?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-10T17:37:33+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Consejo Nacional de la Magistratura, encabezado por el presidente Luis Abinader, juramenta a Justiniano Montero como nuevo presidente de la Suprema Corte de Justicia",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNU211U1JJa05NeWQ2aGY3a2pTQVdGVDYtQnNOMGFKYXR0anZQLUd3SGVGaE51VFcxenpPNGVzanpvZWZrWVhkdFduUHZjX1BYMWszZC1KWnJGcGFjYXR0NXNDLTVka2FqZnlabGpHRjFVWUxRWUpBYmxnYmVwamlPY2dRdGZoX2FtcXd1UkhiOFU4a1U2TmU4TG1oY0JQclBKYnItYXJzWk1UQVBJcnFDZ1NCMkdDZ0RDSVI5ZWx5b1hvQQ?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-10T15:12:52+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "La República Dominicana recibe delegaciones de 17 países para debatir sobre inteligencia artificial y derecho de autor",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdHBxNVRvdi1Qcl9CREVxZGdBa3F4eVNxUElhTE5MVXJmcUo2T2FzQk1vWVRyeXNCaHBTT0ZYdmR1bXBOQnhyaXA5TlZlaGpkSW8wZk1PYTNiTm1TVF85eS1rd2pTU25YWFE0VDZXSnY1OHRNTHZIN3NVVWJLbUFmUmhMNnRjc1F0YmRFczNGRER1Qi05RmF5ZkpVSFptLTRRZ1k5YXJBSDdXZE1EaV9XU0h6OEx3ZXFPZFd1ZXJPeXo2Zw?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-10T14:43:47+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "ETED anuncia mantenimientos e interrupciones eléctricas en varias provincias este martes y miércoles",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZEp4ajVHZG9yN1BKc1pYWWFkQkpLdFNtUUZjdk43M2FBOGQ4QUpzZ0JTeUtuTFZrcTVkZVVvYUZkWFNZMkxxRGRaSW1ja0JHWmxiR0ZxMHp0RFdxekxRWU1sVHV5bS05QjlEY25HdkRqVFg0LVduOUVhQ1Y4VlJOZ183UVFqcmtMcGJFdmwzbWRRM1Y1Q3ExT0ZQZEFPNTB1cmlZcG5oa3pjcldIaUY0bl9BeFFVSS1UUEt1Qmpjd0ZMbUZX?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-10T14:05:25+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Higüey anchors Dominican faith tourism and cultural heritage",
+   "url": "https://dr1.com/news/2026/11/10/higuey-anchors-dominican-faith-tourism-and-cultural-heritage/",
+   "source": "DR1",
+   "date": "2026-11-10T10:34:30+00:00",
+   "lang": "en",
+   "official": false
+  },
+  {
+   "title": "Puerto Plata on track to welcome 60 cruise ships in November",
+   "url": "https://dr1.com/news/2026/11/10/puerto-plata-on-track-to-welcome-60-cruise-ships-in-november/",
+   "source": "DR1",
+   "date": "2026-11-10T10:33:52+00:00",
+   "lang": "en",
+   "official": false
+  },
+  {
+   "title": "Holidays in 2027: Know in advance to plan holiday travel and getaways",
+   "url": "https://dr1.com/news/2026/11/10/long-weekends-in-2027/",
+   "source": "DR1",
+   "date": "2026-11-10T10:29:13+00:00",
+   "lang": "en",
+   "official": false
+  },
+  {
+   "title": "Wingo aterriza en Puerto Plata y amplía su oferta de vuelos directos a República Dominicana",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaDRQNmtBY3pyUkhxSzJzU3lWNDcyOEVpOE5HcWZwSnhjZ0tPMEFzXzNHTjYteVJQYjc3WW8wUUR2NTNscTd1Y1lNMHFDdTdaUlVwNGMwNldLel90SWdaSGN4OFlkV0d4aXdSUGN4M3NmWGZlSUxMc0ktNG5xNGxqTDZleUNsRFNHTTl1QjZISEN1TEVJZ0x0TkdZbGlOX1hrTHBPTVF6dUtaQjZLcFl2Y2Rn?oc=5",
+   "source": "Instituto Distrital de Turismo",
+   "date": "2026-11-10T08:00:00+00:00",
+   "lang": "es",
+   "official": false
+  },
+  {
+   "title": "Diandino Pena vs. the PRM mass transport minds: Fernandez uses mass transit construction to define government competence",
+   "url": "https://dr1.com/news/2026/11/10/diandino-pena-vs-the-prm-mass-transport-minds-fernandez-uses-mass-transit-construction-to-define-government-competence/",
+   "source": "DR1",
+   "date": "2026-11-10T06:31:20+00:00",
+   "lang": "en",
+   "official": false
+  },
+  {
+   "title": "Presidente Luis Abinader entrega dos centros educativos en Bonao y Villa Altagracia, que beneficiarán a más de 1,500 estudiantes",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOa3ZiZE1Ua0ZpRk9rd1BqY3kxYVJPU1JOZWRFMGs0aEZhRGRXbXhURE9BRTNzUE1wcE9XVDR2WjE5UV81eG42N1JsWG9ZRDE4dzVLVEtxcE85NS1DX3Y1dnhYTFdQbERrRUJpRGhiYnUxekN1UUxBNXB4dGpJbG0zLTZSUndGMFZ1N0JGNzRieHkyb3VIeGFTOG9PT1hnS3JmU3g3WTlOajNsYjNPSUYxVlF1S2ZUMEp1aFB5aVhKRng?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-08T21:41:13+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Presidente Luis Abinader hace realidad el sueño de 2,500 familias de El Almirante II con la entrega de títulos de propiedad que benefician a unas 13,000 personas",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcEJEQkM1VUV0bDVTazVHdTBtLUJidmIxMS1oSFVueXd2MlNXRjNhejVfVnh2UlAtamVMSVNKeFBJaGJKVkpfbE1weGpRcC1SS0pQX1p4aWhjS1dKT2ZkeWxsdk5WME82WG5seW5iNWpzNlRTS3EwOXBZdTlKXzZNRk9IcE8tYmdpTG1YQlVyaC1pekJmbHJsdTk3Q1ZOOGx2MUxOSzY4cHBUNG5sYXllX2NmU1ZmNTh3NkFNY3lqcXh2TDVp?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-08T18:49:53+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Puerto Plata concentró el 90.6 % del turismo de cruceros en RD durante la segunda semana de octubre (2)",
+   "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxNRXVNNmJtRGNIWW8yLWVNZ3NoNUN3dkprWDQxZzQtMlU4YnZEdm5RZU1jTTlpRkxYMW03Zk4tNGlTMXkwQVRCdmpsY1lkMjAwRGtrZ2p0YU9POHFIazF4OV9JdUp0cDR0bThtTWF5SThDV2wyajhUZVdOTkxIU3JrM2xpakpSdU1XZ18tWFBtNzc1SWUxOXZzRnN3bFBsZnhqeUQ5WEE3ME9ETWRjOTlRa3IwQVRUUUZtanlnajBsZ3o5YnRIeGZYTlRqeFVONG5obXZXT0NIek9LOG5lam44ak1kYlpnMjNGMVBxUDE2M1RnWlNHQUdZSDZHdm10SVViZTdVWTdFSkdmOGhOODRseldxYmdNck1vVXJtd0pjSDF1QVBmbXc5dHFvQlRTZ1lhVTBtME83UzdyV2Z4Z0dMVzdDLXA0ZzlPSzBN?oc=5",
+   "source": "El Nuevo Diario",
+   "date": "2026-11-08T03:35:52+00:00",
+   "lang": "es",
+   "official": false
+  },
+  {
+   "title": "Tras intensa agenda en Madrid, España, presidente Luis Abinader retomará sus actividades en el país con recorrido este domingo por Monseñor Nouel, Santo Domingo Este y Villa Altagracia",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPLUE5WDFTYzgwT1F1b05kenJMRE9SSGx4bjF1NjNtRDU4ZUtXV2RUako2TF9pUTRUamhJMHhPY093WW9qM3VxbWJnNERHWjFfN014M0RlQTVrczZQckJ4OWczUG5iV1dJRTZyZG9rSGYyX0dDYkhBeTB3MG1sM00yQXI3R1RMdDVjMGJ1cHRiRVNQMWFTR29rN2FSTWxLUjlqZ1BTTUZjTEZybGQzMlhnd1g1T1QtZHJvREZ4Vl8wT3E0d2M?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-06T21:43:02+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Dominican Republic consolidates regional voice as 30th Ibero-American Summit opens in Spain",
+   "url": "https://dr1.com/news/2026/11/05/dominican-republic-consolidates-regional-voice-as-30th-ibero-american-summit-opens-in-spain/",
+   "source": "DR1",
+   "date": "2026-11-05T06:25:37+00:00",
+   "lang": "en",
+   "official": false
+  },
+  {
+   "title": "Ministerio de Agricultura destinará RD 30 millones para facilitar la siembra de habichuelas en el valle de San Juan",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYjlrOVRyVnJXV3l2LWZtV25fSW9KZTFHZmpRMzNMQy0zZXd0S3UzUG1SbXloRDROdzlhNjVQR0x3ekVTX01sUW5pZmxodElYMHhWUG1Na0ZUNDhXNkcxRVhXMDc5VzYxVTJFWGFiSkQtQjJSMENTTHljMUpOMFhqejVsMmdUdGhoQVoySktSQUZROTBJSXlUQy1Wel9oWkRJMmRnb3RzT1p6alVESXVBZDFDMlFIQQ?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-04T12:58:47+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Ministerio de Trabajo reitera feriado del Día de la Constitución se cambia para el lunes 9",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTG1NZy1BUXExbWJfZ1ExelRlR0VhSlVSNUNtcHlpOVZZZzkteVVzOFFlSFZwOE5WbDZXUUY5NjdPWnhfMGJ4anVkbnZrTTliblhadkxIY3hscHdmSUcwUXJDQzdzbFNiNFhyd2IyeFItaWZLSG5ydWExOWJoREU2U2N0MjljYlNOcWUyN0ZYTjNYV3RaRzNkLUhYd1lndGQwSEdVUFc2YkV2eHFnT1JKSllSNkpBcG1tZUVfZHBVTjZlNzBz?oc=5",
+   "source": "Presidencia de la República Dominicana",
+   "date": "2026-11-04T08:00:00+00:00",
+   "lang": "es",
+   "official": true
+  },
+  {
+   "title": "Procigar hosts 12th annual Cigar Night in Santo Domingo",
+   "url": "https://dr1.com/news/2026/11/04/procigar-hosts-12th-annual-cigar-night-in-santo-domingo/",
+   "source": "DR1",
+   "date": "2026-11-04T05:09:43+00:00",
+   "lang": "en",
+   "official": false
+  }
+ ]
 }
