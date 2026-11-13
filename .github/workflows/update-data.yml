@@ -1,0 +1,37 @@
+name: Update tourism data
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours (UTC). Odd minute on purpose: top of the hour is busiest.
+  workflow_dispatch:          # lets you run it by hand from the Actions tab
+  push:
+    paths:
+      - "scripts/update_data.py"
+
+permissions:
+  contents: write             # needed so the job can commit the refreshed JSON files
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch World Bank + news
+        run: python scripts/update_data.py
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name  "tourism-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/worldbank.json data/news.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Auto-update tourism data"
+            git push
+          fi

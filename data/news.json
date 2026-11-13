@@ -1,0 +1,16 @@
+{
+  "updated": "2026-11-13T05:40:00+00:00",
+  "_note": "Seed file built from real articles. The GitHub Action overwrites it with live feed results on its first run.",
+  "items": [
+    { "title": "The Dominican Republic Just Welcomed More Than 56,000 Cruise Passengers in One Week", "url": "https://www.caribjournal.com/2026/11/06/dominican-republic-cruise-passengers/", "source": "CaribJournal", "date": "2026-11-06T12:00:00+00:00", "lang": "en", "official": false },
+    { "title": "Dominican Republic tourism reached 9.2 million visitors from January to September 2026", "url": "https://www.riotimesonline.com/dominican-republic-tourism-9-2-million-visitors-2026/", "source": "Rio Times", "date": "2026-10-07T12:00:00+00:00", "lang": "en", "official": false },
+    { "title": "República Dominicana recibe más de 8.5 millones de visitantes en los primeros ocho meses de 2026", "url": "https://presidencia.gob.do/noticias/republica-dominicana-recibe-mas-de-85-millones-de-visitantes-en-los-primeros-ocho-meses-de", "source": "Presidencia RD", "date": "2026-09-08T12:00:00+00:00", "lang": "es", "official": true },
+    { "title": "Dominican Republic Tourism Hits a Record, With 7.7 Million Visitors in Seven Months", "url": "https://www.caribjournal.com/2026/08/09/dominican-republic-tourism-record-again/", "source": "CaribJournal", "date": "2026-08-09T12:00:00+00:00", "lang": "en", "official": false },
+    { "title": "Dominican Republic welcomes record 7.7 million visitors in first seven months of 2026", "url": "https://dominicantoday.com/dominican-republic-welcomes-record-7-7-million-visitors-in-first-seven-months-of-2026/", "source": "Dominican Today", "date": "2026-08-04T12:00:00+00:00", "lang": "en", "official": false },
+    { "title": "Dominican Republic Tourism Surges to Record First Half, Putting 12 Million Visitors Within Reach", "url": "https://www.caribjournal.com/2026/07/05/dominican-republic-surges-12-million/", "source": "CaribJournal", "date": "2026-07-05T12:00:00+00:00", "lang": "en", "official": false },
+    { "title": "La República Dominicana alcanza récord histórico con la llegada de 6.6 millones de visitantes", "url": "https://presidencia.gob.do/noticias/la-republica-dominicana-alcanza-record-historico-con-la-llegada-de-66-millones-de", "source": "Presidencia RD", "date": "2026-07-02T12:00:00+00:00", "lang": "es", "official": true },
+    { "title": "Dominican Republic welcomes record 3.7 million visitors in Q1 2026", "url": "https://dr1.com/news/2026/04/14/dominican-republic-welcomes-record-3-7-million-visitors-in-q1-2026/", "source": "DR1", "date": "2026-04-14T11:09:07+00:00", "lang": "en", "official": false },
+    { "title": "Turismo crece más de un 13% en febrero al recibir 1,184,902 visitantes", "url": "https://newsinamerica.com/pdcc/turismo/2026/turismo-crece-mas-de-un-13-por-ciento-en-febrero-al-recibir-1184902-de-visitantes/", "source": "News in America", "date": "2026-03-10T12:00:00+00:00", "lang": "es", "official": false },
+    { "title": "Dominican Republic Tops 800,000 Air Arrivals in January, In Strong Start to 2026", "url": "https://www.caribjournal.com/2026/02/12/dominican-republic-air-arrivals-january/", "source": "CaribJournal", "date": "2026-02-12T12:00:00+00:00", "lang": "en", "official": false }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "_readme": "HAND-EDITED. The DR has no API for MITUR's monthly numbers, so after each monthly press conference (usually first week of the month) add a row to 'months' and, if it's a new checkpoint, to 'ytd'. Every number below came from a published article; the url says where.",
+  "last_edited": "2026-11-13",
+  "projection_2026": { "visitors": 12000000, "note": "Minister Collado projects 12M+ visitors for 2026", "url": "https://newsinamerica.com/pdcc/boletin/2026/republica-dominicana-rompe-records-en-llegadas-con-6-6-millones-de-visitantes-rumbo-a-cerrar-con-12-millones/" },
+
+  "annual": [
+    { "year": 2019, "air": 6.47, "cruise": 1.10, "total": 7.57 },
+    { "year": 2021, "air": 4.97, "cruise": 0.33, "total": 5.30 },
+    { "year": 2022, "air": 7.17, "cruise": 0.71, "total": 7.88 },
+    { "year": 2023, "air": 8.06, "cruise": 2.24, "total": 10.30 },
+    { "year": 2024, "air": 8.54, "cruise": 2.65, "total": 11.19 },
+    { "year": 2025, "air": null, "cruise": null, "total": 11.6, "note": "UN Tourism figure reported by MITUR" }
+  ],
+
+  "months": [
+    { "label": "Jan 2026", "visitors": 1219606, "yoy_pct": 5.5,  "url": "https://dr1.com/news/?p=247649" },
+    { "label": "Feb 2026", "visitors": 1184902, "yoy_pct": 13,   "url": "https://dr1.com/news/?p=248373" },
+    { "label": "Jun 2026", "visitors": 975012,  "yoy_pct": 6,    "url": "https://inmobiliario.do/republica-dominicana-supera-los-6-6-millones-de-visitantes-y-se-encamina-hacia-otro-ano-record-en-turismo/" },
+    { "label": "Jul 2026", "visitors": 1083448, "air": 921718, "cruise": 161730, "url": "https://revistamercado.do/money-invest/daily-news/turismo-en-republica-dominicana-rompe-record-con-7-7-millones-de-visitantes-en-siete-meses/" }
+  ],
+
+  "ytd": [
+    { "label": "Jan",     "visitors": 1219606, "yoy_pct": 5.5 },
+    { "label": "Jan–Feb", "visitors": 2404508 },
+    { "label": "Jan–Mar", "visitors": 3710374, "url": "https://dr1.com/news/2026/04/14/dominican-republic-welcomes-record-3-7-million-visitors-in-q1-2026/" },
+    { "label": "Jan–Jun", "visitors": 6616671, "yoy_pct": 7.7, "air": 4963542, "cruise": 1653129, "url": "https://dominicantoday.com/?p=2590" },
+    { "label": "Jan–Jul", "visitors": 7700118, "url": "https://dominicantoday.com/dominican-republic-welcomes-record-7-7-million-visitors-in-first-seven-months-of-2026/" },
+    { "label": "Jan–Sep", "visitors": 9241246, "yoy_pct": 7.5, "url": "https://www.riotimesonline.com/dominican-republic-tourism-9-2-million-visitors-2026/" }
+  ],
+
+  "revenue_usd_b": [
+    { "year": 2019, "value": 7.5 },
+    { "year": 2023, "value": 9.8 },
+    { "year": 2024, "value": 10.9 }
+  ],
+
+  "puerto_plata": {
+    "airport_passengers": [
+      { "year": 2021, "value": 387000 },
+      { "year": 2022, "value": null },
+      { "year": 2023, "value": 645064 },
+      { "year": 2024, "value": 880091 }
+    ],
+    "airport_share_2026": [
+      { "label": "Jan", "share_pct": 6, "note": "49,305 air arrivals, down 4% YoY", "url": "https://www.caribjournal.com/2026/02/12/dominican-republic-air-arrivals-january/" },
+      { "label": "Feb", "share_pct": 5, "url": "https://dr1.com/news/?p=248373" },
+      { "label": "Jun", "share_pct": 3, "note": "reported combined with El Higüero", "url": "https://presidencia.gob.do/noticias/la-republica-dominicana-alcanza-record-historico-con-la-llegada-de-66-millones-de" }
+    ],
+    "cruise_notes": [
+      { "text": "Jan 2026: Taíno Bay took 37% of national cruise arrivals, Amber Cove 28%", "url": "https://dr1.com/news/?p=247649" },
+      { "text": "Last week of Oct 2026: Puerto Plata handled 11 of the country's 15 cruise calls; 56,000+ cruise passengers nationwide that week", "url": "https://www.caribjournal.com/2026/11/06/dominican-republic-cruise-passengers/" }
+    ]
+  },
+
+  "sources": ["MITUR monthly press briefings", "Banco Central flujo turístico reports", "CaribJournal", "DR1", "Dominican Today"]
+}
